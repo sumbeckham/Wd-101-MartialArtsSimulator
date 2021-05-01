@@ -9,6 +9,10 @@
     text-align: center;
     justify-content: center;
   }
+/** backgrpund color*/
+body {
+  background-color: rgba(100, 96, 96, 0.521);
+}
   
   /* Background Image  --> Adjusted width of absolute image */
   .bg-img {
