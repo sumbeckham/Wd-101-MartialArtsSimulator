@@ -89,6 +89,7 @@ loadImages((images) => {
   document.getElementById("kick").onclick = () => {
     queuedAnimations.push("kick");
     
+  };
   document.getElementById("block").onclick = () => {
     queuedAnimations.push("block");
     
@@ -110,13 +111,10 @@ loadImages((images) => {
       
     } else if (key === "ArrowRight") {
       queuedAnimations.push("punch");
-      
     } else if (key === "ArrowUp") {
       queuedAnimations.push("forward");
-     
     } else if (key === "ArrowDown") {
       queuedAnimations.push("backward");
-     
     } else if (key === " ") {
       queuedAnimations.push("block");
     }
