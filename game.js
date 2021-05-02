@@ -84,23 +84,22 @@ loadImages((images) => {
 
   document.getElementById("punch").onclick = () => {
     queuedAnimations.push("punch");
-    playSounds("punch");
+    
   };
   document.getElementById("kick").onclick = () => {
     queuedAnimations.push("kick");
-    playSounds("kick");
-  };
+    
   document.getElementById("block").onclick = () => {
     queuedAnimations.push("block");
-    playSounds("block");
+    
   };
   document.getElementById("forward").onclick = () => {
     queuedAnimations.push("forward");
-    playSounds("move");
+    
   };
   document.getElementById("backward").onclick = () => {
     queuedAnimations.push("backward");
-    playSounds("move");
+    
   };
 
   document.addEventListener("keyup", (event) => {
@@ -108,19 +107,18 @@ loadImages((images) => {
 
     if (key === "ArrowLeft") {
       queuedAnimations.push("kick");
-      playSounds("kick");
+      
     } else if (key === "ArrowRight") {
       queuedAnimations.push("punch");
-      playSounds("punch");
+      
     } else if (key === "ArrowUp") {
       queuedAnimations.push("forward");
-      playSounds("move");
+     
     } else if (key === "ArrowDown") {
       queuedAnimations.push("backward");
-      playSounds("move");
+     
     } else if (key === " ") {
       queuedAnimations.push("block");
-      playSounds("block");
     }
   });
 });
