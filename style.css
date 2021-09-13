@@ -62,4 +62,6 @@ h2{
     color: green;
 }
   
- 
+#myCanvas{
+    width: 100%;
+}
