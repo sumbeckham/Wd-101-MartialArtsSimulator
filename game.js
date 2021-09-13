@@ -1,6 +1,10 @@
 let c = document.getElementById("myCanvas");
 let ctx = c.getContext("2d");
 
+let heightRatio = 1.5;
+c.height = c.width * heightRatio;
+
+
 let loadImage = (src, callback) => {
   var img = document.createElement("img");
   img.onload = () => callback(img);
